@@ -4,4 +4,9 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+const env = {
+    MONGO_URI: "mongodb+srv://varun:varun@inventory.tue5zce.mongodb.net/?retryWrites=true&w=majority"
+}
+
+module.exports = nextConfig, env;
+
