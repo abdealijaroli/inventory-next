@@ -8,7 +8,7 @@ export default function Login() {
 
         validate: {
             name: (value) => (value.length < 2 ? 'Name must have at least 2 letters.' : null),
-            password: (value) => (value.length < 2 ? 'Password must have at least 8 characters.' : null),
+            password: (value) => (value.length < 8 ? 'Password must have at least 8 characters.' : null),
         },
     });
 
